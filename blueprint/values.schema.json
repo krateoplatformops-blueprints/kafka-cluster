@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "kafka": {
+      "additionalProperties": false,
+      "description": "Apache Kafka configuration (cluster + topics)",
+      "properties": {
+        "clusterName": {
+          "default": "kafka",
+          "description": "Logical name of the Kafka cluster",
+          "title": "clusterName",
+          "type": "string"
+        }
+      },
+      "title": "kafka",
+      "type": "object"
+    }
+  },
+  "type": "object"
+}
